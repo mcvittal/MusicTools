@@ -1,0 +1,2 @@
+a=/tmp/test.wav
+s=/tmp/test2.wav

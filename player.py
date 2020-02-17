@@ -1,12 +1,13 @@
 from pynput import keyboard
 import simpleaudio 
 import threading, time 
+import sys
 
 mapping = {}
 cur_key = ""
 
 def set_params():
-    f = open("/tmp/parameters.txt")
+    f = open(sys.argv[1])
     c = f.read().split("\n")
     for kv in c:
         if "=" in kv:
